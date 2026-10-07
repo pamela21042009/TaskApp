@@ -10,4 +10,20 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'agregar-tarea',
+    loadComponent: () => import('./agregar-tarea/agregar-tarea.page').then( m => m.AgregarTareaPage)
+  },
+  {
+    path: 'agregar-tarea',
+    loadComponent: () => import('./agregar-tarea/agregar-tarea.page').then( m => m.AgregarTareaPage)
+  },
+  {
+    path: 'agregar-tarea',
+    loadComponent: () => import('./agregar-tarea/agregar-tarea.page').then( m => m.AgregarTareaPage)
+  },
+  {
+    path: 'agregar-tarea',
+    loadComponent: () => import('./agregar-tarea/agregar-tarea.page').then( m => m.AgregarTareaPage)
+  },
 ];

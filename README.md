@@ -1,10 +1,10 @@
 # TaskApp
 
-## Descripción
+## Aplicación de gestión de tareas académicas
 
-TaskApp es una aplicación desarrollada con Ionic y Angular para organizar y administrar tareas académicas. Permite crear tareas, asignarles una prioridad, marcarlas como completadas y eliminarlas.
+TaskApp es una aplicación desarrollada con **Ionic y Angular** que permite organizar tareas académicas de forma sencilla. La aplicación permite crear tareas, agregar una descripción, seleccionar una prioridad, marcar tareas como completadas y eliminarlas.
 
-Las tareas se guardan en el almacenamiento local del navegador mediante `localStorage`, por lo que permanecen guardadas aunque se recargue la aplicación.
+También utiliza `localStorage` para guardar las tareas y recuperarlas después de recargar la aplicación.
 
 ## Tecnologías utilizadas
 
@@ -18,7 +18,7 @@ Las tareas se guardan en el almacenamiento local del navegador mediante `localSt
 
 ## Requisitos
 
-Para ejecutar el proyecto se necesita tener instalado:
+Antes de ejecutar el proyecto es necesario tener instalado:
 
 * Node.js
 * npm
@@ -26,51 +26,101 @@ Para ejecutar el proyecto se necesita tener instalado:
 
 ## Instalación
 
-Primero, descargar o clonar el repositorio y entrar a la carpeta del proyecto.
+Primero, clona el repositorio y entra en la carpeta del proyecto:
 
-Luego instalar las dependencias con:
+```bash
+git clone https://github.com/pamela21042009/TaskApp.git
+cd TaskApp
+```
+
+Después, instala todas las dependencias necesarias:
 
 ```bash
 npm install
 ```
 
-## Ejecutar el proyecto
+## Ejecutar en modo desarrollo
 
-Para iniciar la aplicación en modo desarrollo:
+Para iniciar la aplicación en modo desarrollo utiliza:
 
 ```bash
 ionic serve
 ```
 
-Después de ejecutar el comando, la aplicación se abrirá en el navegador.
+Después de ejecutar el comando, Ionic iniciará el servidor de desarrollo y podrás abrir la aplicación desde el navegador.
 
-## Funciones principales
+Normalmente estará disponible en:
+
+```text
+http://localhost:8100/
+```
+
+## Funcionalidades
 
 * Crear nuevas tareas.
 * Agregar título y descripción.
 * Seleccionar prioridad: Alta, Media o Baja.
+* Validar que el título tenga mínimo 5 caracteres.
 * Marcar tareas como completadas.
-* Mostrar las tareas completadas con texto tachado.
+* Mostrar las tareas completadas con el texto tachado.
 * Eliminar tareas.
-* Guardar las tareas en `localStorage`.
+* Guardar las tareas utilizando `localStorage`.
 * Recuperar las tareas después de recargar la aplicación.
 
 ## Estructura principal
 
 ```text
-src/
-├── app/
-│   ├── home/
-│   ├── agregar-tarea/
-│   ├── models/
-│   └── services/
-└── main.ts
+TaskApp/
+├── src/
+│   └── app/
+│       ├── home/
+│       ├── agregar-tarea/
+│       ├── models/
+│       └── services/
+├── package.json
+├── angular.json
+├── ionic.config.json
+└── README.md
 ```
 
-## Validación
+## Comandos principales
 
-El título de cada tarea es obligatorio y debe tener como mínimo 5 caracteres.
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar en desarrollo:
+
+```bash
+ionic serve
+```
+
+Agregar cambios a Git:
+
+```bash
+git add .
+```
+
+Crear un commit:
+
+```bash
+git commit -m "Descripción del cambio"
+```
+
+Subir cambios a GitHub:
+
+```bash
+git push
+```
+
+## Repositorio
+
+El código fuente del proyecto se encuentra en GitHub:
+
+https://github.com/pamela21042009/TaskApp
 
 ## Autora
 
-Ashley Pamela Reding Hernandez
+**Ashley Pamela Reding Hernandez**
